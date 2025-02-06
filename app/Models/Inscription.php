@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Inscription extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['nom', 'prenom', 'email', 'telephone'];
 }
