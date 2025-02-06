@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('inscriptions', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->string('prenom');
+            $table->string('pre-nom');
             $table->string('email')->unique();
             $table->string('telephone');
             $table->timestamps();

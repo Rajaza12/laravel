@@ -4,33 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+    <!-- Lien Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Formulaire d'inscription</h1>
+<body class="bg-light">
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Formulaire d'inscription</h1>
+
     @if ($errors->any())
-        <div>
-            <ul>
+        <div class="alert alert-danger">
+            <ul class="mb-0">
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
                 @endforeach
             </ul>
         </div>
     @endif
-    <form action="{{ route('inscription.store') }}" method="POST">
+
+    <form action="{{ route('inscription.store') }}" method="POST" class="bg-white p-4 shadow-sm rounded">
         @csrf
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom" id="nom" required><br><br>
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" class="form-control" name="nom" id="nom" required placeholder="Entrez votre nom">
+        </div>
 
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" id="prenom" required><br><br>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" class="form-control" name="prenom" id="prenom" required placeholder="Entrez votre prénom">
+        </div>
 
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" required><br><br>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" class="form-control" name="email" id="email" required placeholder="Entrez votre adresse email">
+        </div>
 
-        <label for="telephone">Téléphone :</label>
-        <input type="text" name="telephone" id="telephone" required><br><br>
+        <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input type="text" class="form-control" name="telephone" id="telephone" required placeholder="Entrez votre numéro de téléphone">
+        </div>
 
-        <button type="submit">S'inscrire</button>
+        <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
     </form>
+</div>
+
+<!-- Lien Bootstrap JS et dépendances -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
