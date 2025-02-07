@@ -17,7 +17,7 @@
                 <a href="{{ route('inscription.create') }}" class="btn btn-primary btn-block">Page d'inscription</a>
             </li>
             <li class="list-group-item">
-                <a href="{{ route('inscription.index') }}" class="btn btn-secondary btn-block">Liste des inscriptions</a>
+                <a href="{{ route('inscription.index') }}"  class="btn btn-secondary btn-block">Liste des inscriptions</a>
             </li>
         </ul>
     </div>
