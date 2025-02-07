@@ -14,15 +14,20 @@ class InscriptionController extends Controller
        }
     
         $inscriptions = Inscription::all();
+<<<<<<< HEAD
         return view('inscriptions\index', compact('inscriptions'));
+=======
+        return view('inscriptions.index', compact('inscriptions'));
+>>>>>>> parent of 3b7a4f4 (Porjet reusii)
     }
     
 
     public function create()
     {
-        return view('inscription\create');
+        return view('inscriptions.create');
     }
 
+<<<<<<< HEAD
     public function store(Request $request)
     {
         $request->validate([
@@ -45,3 +50,6 @@ class InscriptionController extends Controller
     }
     
 }
+=======
+}
+>>>>>>> parent of 3b7a4f4 (Porjet reusii)
