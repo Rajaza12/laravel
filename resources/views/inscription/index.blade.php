@@ -6,12 +6,17 @@
     <title>Liste des Inscriptions</title>
 </head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <form action="{{ route('inscription.create') }}" method="POST" class="bg-white p-4 shadow-sm rounded">
 <body class="bg-light">
    
 <div class="container mt-5">
     <h1 class="text-center mb-4">Liste des Inscriptions</h1>
 
+=======
+<body>
+    <h1>Liste des Inscriptions</h1>
+>>>>>>> parent of 3b7a4f4 (Porjet reusii)
 =======
 <body>
     <h1>Liste des Inscriptions</h1>

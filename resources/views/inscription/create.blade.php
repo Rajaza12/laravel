@@ -6,6 +6,7 @@
     <title>Inscription</title>
 </head>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <body class="bg-light">
     <div class="container mt-5">
         <!-- Menu Home -->
@@ -66,6 +67,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 =======
+=======
+>>>>>>> parent of 3b7a4f4 (Porjet reusii)
 <body>
     <h1>Formulaire d'inscription</h1>
     @if ($errors->any())
@@ -93,6 +96,9 @@
 
         <button type="submit">S'inscrire</button>
     </form>
+<<<<<<< HEAD
+>>>>>>> parent of 3b7a4f4 (Porjet reusii)
+=======
 >>>>>>> parent of 3b7a4f4 (Porjet reusii)
 </body>
 </html>
